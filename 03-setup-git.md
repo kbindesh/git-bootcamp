@@ -62,12 +62,14 @@
      Initialized empty Git repository in /home/<user>/repository_name/.git/ </br>
      Switched to a new branch 'main'
    - Now, use a `git status` command to show the status of the working tree:
+     
      ```
      git status
      ```
      
 ## Get help from Git (man pages)
    - Git has a built-in `help` function that you can use to look up commands and keywords.
+     
      ```
      git --help
 
@@ -81,4 +83,3 @@
      # To get help around git clone command
      git clone --help
      ```
-## Git Basic Commands
