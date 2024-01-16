@@ -40,7 +40,45 @@
      # You must see user.name and user.email variables updated with your details
      ```
 ## Setup your Git Repository
+   - Git works by checking for changes to files within a certain folder.
+   - So let's create a folder to serve as our project directory and let Git know about it, so it can start tracking changes.
+   - Start by creating an empty folder for your project, and then initialize a Git repository inside it:
+     ```
+     # Create a folder
+     mkdir <DIRECTORY_NAME>
 
-## Get help from Git
+     # Change the directory to our project directory
+     cd <DIRECTORY_NAME>
+     ```
+   - Now, initialize your new repository and set the name of the default branch to main:
+     ```
+     git init --initial-branch=main
 
+     or
+
+     git init -b main
+     ```
+     After initializing the repository, you should see output similar to this example:</br></br>
+     Initialized empty Git repository in /home/<user>/repository_name/.git/ </br>
+     Switched to a new branch 'main'
+   - Now, use a `git status` command to show the status of the working tree:
+     ```
+     git status
+     ```
+     
+## Get help from Git (man pages)
+   - Git has a built-in `help` function that you can use to look up commands and keywords.
+     ```
+     git --help
+
+     # You may read through the different options available with Git and note that each command comes with its own help page 
+     ```
+   - Git Help: Examples
+     ```
+     # To get help around git commit command
+     git commit --help
+
+     # To get help around git clone command
+     git clone --help
+     ```
 ## Git Basic Commands
