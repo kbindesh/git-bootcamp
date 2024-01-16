@@ -1,4 +1,4 @@
-# Git Commands
+# Setup Git
 
 ## Pre-requisites
    - Git must be installed on your system.
