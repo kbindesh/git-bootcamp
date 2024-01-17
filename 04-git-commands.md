@@ -58,8 +58,27 @@
    ```
 
 ## git checkout
+   - A "checkout" is the act of switching between different versions of a target entity.
+   - This commands lets you checking out old commits and old file revisions.
+   - This commands also lets you navigate to any existing branches.
    ```
+   # Reviewing old commits and switch to any previous commit
+   git log --oneline
+   git commit <COMMIT_ID>
+   
+   # Switching between the existing branches
+   git checkout <EXISTING_BRANCH_NAME>
 
+   # Create a new branch and immediately switch to it
+   git checkout -b <NEW_BRANCH_NAME>
+
+   # To checkout a remote branch you have to first fetch the contents of the branch, and then checkout
+   git fetch --all
+   git checkout ＜remotebranch＞
+
+   # Checkout a new local branch and reset it to the remote branches last commit
+   git checkout -b ＜branchname＞
+   git reset --hard origin/＜branchname＞
    ```
 
 ## git config
