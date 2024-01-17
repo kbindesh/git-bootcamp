@@ -1,11 +1,13 @@
 # Git Commands
 
-## Viewing current installed version of Git
+## git version
+   - To view current installed version of the Git
    ```
    git --version
    ```
 
-## Initialize the directory as Git repository
+## git init
+   - Initialize the directory as Git repository
    ```
    # Initialize a directory with no default branches
    git init
@@ -17,7 +19,47 @@
 
    git init -b <BRANCH_NAME>
    ```
-## Show the working tree status (branch)
+## git status
+   - Show the working tree status (branch)
    ```
    git status
    ```
+## git add
+   - Moves changes from the working directory to staging area.
+   ```
+   # Adding selected files to the staging area
+   git add <FILE-01> <FILE-02> <FILE-N>
+
+    OR
+
+   # Adding all the files from the working directory to staging area ( you may use -A --all)
+   git add .
+   ```
+## git branch
+   -  This command lets you create isolated development environments within a single repository.
+   ```
+   # List all the branches in your repository
+   git branch
+
+   # Create a new branch called ＜BRANCH＞. This does not check out the new branch
+   git branch <BRANCH>
+
+   # Delete the specified branch and prevents you from deleting the branch if it has unmerged changes
+   git branch -d <BRANCH>
+
+   # Force delete the specified branch, even if it has unmerged changes
+   git branch -D <BRANCH>
+
+   # Rename the current branch to ＜NEW-BRANCH-NAME＞
+   git branch -m <NEW-BRANCH-NAME>
+
+   # List all remote branches
+   git branch -a
+   ```
+
+## git checkout
+   ```
+
+   ```
+
+## git config
